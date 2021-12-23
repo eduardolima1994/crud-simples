@@ -1,6 +1,6 @@
 # CRUD Simples
 
-Criação de CRUD com:
+Criação de CRUD Simples, com:
 - NodeJS
 - ExpressJS
 - HTML5
