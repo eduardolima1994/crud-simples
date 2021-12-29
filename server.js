@@ -12,7 +12,7 @@ MongoClient.connect(url, (err,client) => {
     db = client.db('crud')
 
     app.listen(5000, function() {
-        console.log('O servidor está rodando na porta 5000!');
+        console.log('O servidor está rodando na porta 3000!');
     });
 })
 
