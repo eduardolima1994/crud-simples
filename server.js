@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
+const port = 5000;
 
 const MongoClient = require('mongodb').MongoClient;
 const { ObjectId } = require('mongodb');
@@ -11,12 +12,14 @@ MongoClient.connect(url, (err,client) => {
     if(err) return console.log(err)
     db = client.db('crud')
 
-    app.listen(5000, function() {
-        console.log('O servidor está rodando na porta 3000!');
+    app.listen(port, () => {
+        console.log(`Servidor rodando na porta ${port}`)
     });
 })
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+return app;
+//app.use(bodyParser.urlencoded({ extended: true }));
 
 app.set('view engine','ejs');
 
