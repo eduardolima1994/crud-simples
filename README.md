@@ -4,5 +4,5 @@ Criação de CRUD Simples, com:
 - NodeJS
 - ExpressJS
 - MongoDB
-- Javascript
+- ReactJS
 - HTML5
