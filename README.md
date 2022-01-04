@@ -1,6 +1,6 @@
 # CRUD Simples
 
-Criação de CRUD Simples, com:
+Criação de CRUD Simples, em:
 - NodeJS
 - ExpressJS
 - MongoDB
